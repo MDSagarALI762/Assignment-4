@@ -3,7 +3,7 @@
 }
 @layer components {
   .banner-desc {
-    @apply flex px-14 md:px-120 flex-col gap-2 justify-center items-center h-64;
+    @apply flex px-14 md:px-130 flex-col gap-2 justify-center items-center h-64;
   }
   .banner-title {
     @apply text-3xl md:text-5xl text-center text-white;
