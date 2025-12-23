@@ -1,0 +1,53 @@
+@import "tailwindcss";
+@theme {
+}
+@layer components {
+  .banner-desc {
+    @apply flex px-14 md:px-120 flex-col gap-2 justify-center items-center h-64;
+  }
+  .banner-title {
+    @apply text-3xl md:text-5xl text-center text-white;
+  }
+  .search {
+    @apply flex items-center w-[800px] bg-white border border-gray-300 rounded-full shadow-sm focus-within:ring-2 focus-within:ring-yellow-400;
+  }
+  .search-input {
+    @apply w-full px-5 py-3 text-gray-700 outline-none rounded-l-full;
+  }
+  .search-btn {
+    @apply px-5 py-3 bg-yellow-500 text-white rounded-r-full hover:bg-yellow-600 transition;
+  }
+  .card {
+    @apply md:col-span-1 flex flex-col  h-full pb-2 shadow-2xl rounded-2xl mb-6 md:mb-0;
+  }
+  .img {
+    @apply h-[170px] w-full rounded-2xl;
+  }
+  .card-details {
+    @apply p-4 flex flex-col grow gap-4 md:gap-2;
+  }
+  .card-title {
+    @apply text-2xl font-bold;
+  }
+  .card-btn {
+    @apply mt-auto bg-yellow-500 px-4 py-2 rounded-md self-end;
+  }
+  .modal-overlay {
+    @apply fixed inset-0 bg-black/60 flex items-center justify-center z-[999];
+  }
+
+  .modal {
+    @apply bg-white rounded-2xl max-w-xl w-full p-6 relative;
+  }
+
+  .modal-close {
+    @apply absolute top-3 right-3 text-xl font-bold cursor-pointer;
+  }
+
+  .footer {
+    @apply flex justify-between flex-col flex-col-reverse md:flex-row gap-4 items-center w-11/12 py-10 md:px-6 mx-auto;
+  }
+  .scroll-btn {
+    @apply fixed bottom-6 right-6 bg-yellow-500 text-white p-3 rounded-full shadow-lg hover:bg-yellow-600 transition text-xl;
+  }
+}

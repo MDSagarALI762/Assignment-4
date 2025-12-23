@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>foode recipe</title>
+  </head>
+  <body class="relative">
+    <header class="bg-white py-4 flex justify-center items-center">
+      <img class="w-30" src="./images/logo (1).png" alt="" />
+    </header>
+
+    <main>
+      <div class="banner-area">
+        <div
+          class="banner h-64 w-full bg-center"
+          style="background-image: url('./images//page-title.jpg')"
+        >
+          <div class="banner-desc">
+            <h1 class="banner-title">Search Your Favourite Recipe</h1>
+            <p class="text-center text-white">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore
+              repellat sed amet!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-area mt-12">
+        <div class="products w-11/12 mx-auto">
+          <div class="flex justify-center">
+            <div class="search">
+              <input
+                id="search-input"
+                type="text"
+                placeholder="Search..."
+                class="search-input"
+              />
+
+              <button id="search-btn" class="search-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="product-lists mt-6 md:mt-10">
+            <h2 class="text-3xl md:text-5xl text-center">Latest Recipe</h2>
+
+            <div id="loading" class="hidden flex justify-center mt-6">
+              <div
+                class="h-10 w-10 border-4 border-yellow-500 border-t-transparent rounded-full animate-spin"
+              ></div>
+            </div>
+
+            <div id="products" class="mt-7 md:grid grid-cols-4 gap-6"></div>
+          </div>
+
+          <!-- modal always outside -->
+          <div id="modal-root"></div>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-gray-900 w-full mt-12">
+      <div class="footer">
+        <div>
+          <p class="text-white">Copyright &copy; 2023 - All Right Reserved</p>
+        </div>
+
+        <div class="flex items-center gap-2 text-white">
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-facebook-f"></i>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll To Top Button -->
+    <button id="scrollTopBtn" class="hidden scroll-btn">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="./product.js"></script>
+  </body>
+</html>
