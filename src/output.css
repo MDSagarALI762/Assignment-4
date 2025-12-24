@@ -357,7 +357,13 @@
     gap: calc(var(--spacing) * 2);
     padding-inline: calc(var(--spacing) * 14);
     @media (width >= 48rem) {
-      padding-inline: calc(var(--spacing) * 130);
+      padding-inline: 340px;
+    }
+    @media (width >= 80rem) {
+      padding-inline: 500px;
+    }
+    @media (width >= 96rem) {
+      padding-inline: 600px;
     }
   }
   .banner-title {

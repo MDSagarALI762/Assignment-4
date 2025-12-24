@@ -4,4 +4,4 @@
 
 ### Email: mdsagarali762@gmail.com
 
-[ Live url](অ্যাসাইনমেন্টের লাইভ url লিংক দিন)
+[ Live url](https://interactive-cares-assignment-4.netlify.app/)
